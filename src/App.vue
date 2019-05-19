@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
+      <router-link to="/">Home</router-link> 
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
@@ -9,23 +10,33 @@
 </template>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+*{
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 #nav {
-  padding: 30px;
+  padding: 2% 2% 1% 2%;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(63, 63, 63);
 }
 
 #nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  font-weight: 100;
+  color: #ffffff;
+  padding: 1%;
+  text-decoration: none;
+}
+
+#nav a:hover, #nav a.router-link-exact-active:hover {
+  background-color: #47866a;
+  color:#2c3e50;
+  -webkit-transition: background-color 1s; 
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #66f7ae;
+  text-decoration: none;
+
 }
 </style>
